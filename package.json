@@ -1,0 +1,27 @@
+{
+  "name": "@rbxts/PathGenUtils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bytebit-Org/PathGenUtils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bytebit-Org/PathGenUtils/issues"
+  },
+  "homepage": "https://github.com/Bytebit-Org/PathGenUtils#readme",
+  "private": false,
+  "devDependencies": {
+    "@rbxts/types": "^1.0.235"
+  },
+  "dependencies": {
+    "@rbxts/t": "^1.2.2"
+  }
+}
