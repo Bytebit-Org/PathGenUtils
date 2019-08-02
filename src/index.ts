@@ -53,8 +53,7 @@ export = {
         const [ startWaypoint, endWaypoint ] = this.FindStartAndEndWaypoints(pathData, distanceProgress);
         
         if (startWaypoint === undefined) {
-            error("Cannot find waypoints");
-            return new Vector3();
+            throw "Cannot find waypoints";
         }
 
         if (endWaypoint === undefined) {

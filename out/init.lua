@@ -1,5 +1,5 @@
 -- Compiled with https://roblox-ts.github.io v0.2.14
--- July 31, 2019, 10:09 PM GMT-08:00
+-- August 1, 2019, 6:31 PM GMT-08:00
 
 local TS = _G[script];
 local exports;
@@ -39,7 +39,6 @@ function _1:CalculatePositionByDistanceProgress(pathData, distanceProgress)
 	local startWaypoint, endWaypoint = self:FindStartAndEndWaypoints(pathData, distanceProgress);
 	if startWaypoint == nil then
 		error("Cannot find waypoints");
-		return Vector3.new();
 	end;
 	if endWaypoint == nil then
 		assert(distanceProgress == 1, "Could not find end waypoint, was not at the end of path");
