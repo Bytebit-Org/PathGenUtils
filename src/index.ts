@@ -1,10 +1,7 @@
-import tPathData = require("Interfaces/tPathData");
-import t = require("@rbxts/t");
-import tWaypoint = require("Interfaces/tWaypoint");
 import { ComputeCubicBezierPoint, ComputeQuadraticBezierPoint } from "BezierCurves";
-
-type IWaypoint = t.static<typeof tWaypoint>;
-type IPathData = t.static<typeof tPathData>;
+import IPathData from "Interfaces/IPathData";
+import IWaypoint = require("Interfaces/IWaypoint");
+import t = require("@rbxts/t");
 
 export = {
     /**
@@ -15,7 +12,7 @@ export = {
      * @returns A tuple of the start and end waypoints or nil
      */
     FindStartAndEndWaypoints(pathData: IPathData, distanceProgress: number) : LuaTuple<[undefined, undefined] | [IWaypoint, IWaypoint?]> {
-        assert(tPathData(pathData));
+        assert(IPathData(pathData));
         assert(t.numberConstrained(0, 1)(distanceProgress));
 
         let minIndex = 1;
@@ -47,7 +44,7 @@ export = {
      * @returns The resulting position
      */
     CalculatePositionByDistanceProgress(pathData: IPathData, distanceProgress: number) : Vector3 {
-        assert(tPathData(pathData));
+        assert(IPathData(pathData));
         assert(t.numberConstrained(0, 1)(distanceProgress));
 
         const [ startWaypoint, endWaypoint ] = this.FindStartAndEndWaypoints(pathData, distanceProgress);
@@ -95,7 +92,7 @@ export = {
      * @returns The resulting position
      */
     CalculatePositionByDistance(pathData: IPathData, distance: number) : Vector3 {
-        assert(tPathData(pathData));
+        assert(IPathData(pathData));
         assert(t.numberMin(0)(distance));
 
         return this.CalculatePositionByDistanceProgress(pathData, distance / pathData.TotalDistance);
