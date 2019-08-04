@@ -2,8 +2,8 @@
   "name": "@rbxts/PathGenUtils",
   "version": "1.0.0",
   "description": "",
-  "main": "out/init.lua",
-  "types": "out/index.d.ts",
+  "main": "out/PathGenUtils.lua",
+  "types": "out/PathGenUtils.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
