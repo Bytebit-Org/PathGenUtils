@@ -23,6 +23,7 @@
     "@rbxts/types": "^1.0.235"
   },
   "dependencies": {
+    "@rbxts/roblox-BezierFunctions": "git+https://github.com/Bytebit-Org/roblox-BezierFunctions.git",
     "@rbxts/t": "^1.2.2"
   }
 }

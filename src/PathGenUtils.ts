@@ -1,4 +1,4 @@
-import { ComputeCubicBezierPoint, ComputeQuadraticBezierPoint, ComputeCubicBezierDerivativeWithRespectToTimestamp, ComputeQuadraticBezierDerivativeWithRespectToTimestamp } from "BezierCurves";
+import { ComputeCubicBezierPoint, ComputeCubicBezierDerivativeWithRespectToTimestamp, ComputeQuadraticBezierPoint, ComputeQuadraticBezierDerivativeWithRespectToTimestamp } from "@rbxts/roblox-BezierFunctions/src/index";
 import IPathData from "Interfaces/IPathData";
 import IWaypoint = require("Interfaces/IWaypoint");
 import t = require("@rbxts/t");

@@ -1,10 +1,10 @@
 -- Compiled with https://roblox-ts.github.io v0.2.14
--- August 3, 2019, 7:47 PM Pacific Daylight Time
+-- October 15, 2019, 8:15 PM Pacific Daylight Time
 
 local TS = _G[script];
 local exports = {};
-local _0 = TS.import(script.Parent, "BezierCurves");
-local ComputeCubicBezierPoint, ComputeQuadraticBezierPoint, ComputeCubicBezierDerivativeWithRespectToTimestamp, ComputeQuadraticBezierDerivativeWithRespectToTimestamp = _0.ComputeCubicBezierPoint, _0.ComputeQuadraticBezierPoint, _0.ComputeCubicBezierDerivativeWithRespectToTimestamp, _0.ComputeQuadraticBezierDerivativeWithRespectToTimestamp;
+local _0 = TS.import(TS.getModule("roblox-BezierFunctions").index);
+local ComputeCubicBezierPoint, ComputeCubicBezierDerivativeWithRespectToTimestamp, ComputeQuadraticBezierPoint, ComputeQuadraticBezierDerivativeWithRespectToTimestamp = _0.ComputeCubicBezierPoint, _0.ComputeCubicBezierDerivativeWithRespectToTimestamp, _0.ComputeQuadraticBezierPoint, _0.ComputeQuadraticBezierDerivativeWithRespectToTimestamp;
 local IPathData = TS.import(script.Parent, "Interfaces", "IPathData");
 local t = TS.import(TS.getModule("t").lib.ts);
 local ICalculateOptions = TS.import(script.Parent, "Interfaces", "ICalculateOptions");
